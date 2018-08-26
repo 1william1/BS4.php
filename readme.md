@@ -48,3 +48,5 @@ echo $BS4->breadcrumb(array(
       "home"
 ));
 ```
+
+![Output](https://cdn.discordapp.com/attachments/341914782053695490/483242142131814400/unknown.png)
