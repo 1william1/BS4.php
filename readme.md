@@ -38,3 +38,13 @@
 | primary           | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
 | **Success**       | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
 | **Warning**       | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
+
+#### Breadcrumb
+
+```php
+echo $BS4->breadcrumb(array(
+      "root",
+      "usr",
+      "home"
+));
+```

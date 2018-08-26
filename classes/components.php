@@ -7,6 +7,14 @@ $BS4->badges->pill = new BS4_badges_pill();
 
 class BS4
 {
+    public function breadcrumb($items)
+    {
+        $html = '<nav aria-label="breadcrumb"><ol class="breadcrumb">';
+        foreach ($items as $key => $item) {
+            $html = $html.'<li class="breadcrumb-item"><a href="#'.$item.'">'.$item.'</a></li>';
+        }
+        return '</ol></nav>'.$html;
+    }
 }
 
 class BS4_alerts
