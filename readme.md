@@ -32,12 +32,12 @@
 | Component         | usage                                                        |
 |:------------------|:-------------------------------------------------------------|
 | **Danger**        | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
-| Dark              | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
-| Info              | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
-| Light             | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
-| primary           | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
-| **Success**       | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
-| **Warning**       | ``echo $BS4->badges->pill->danger("This is a pill.");``      |
+| Dark              | ``echo $BS4->badges->pill->dark("This is a pill.");``      |
+| Info              | ``echo $BS4->badges->pill->info("This is a pill.");``      |
+| Light             | ``echo $BS4->badges->pill->light("This is a pill.");``      |
+| primary           | ``echo $BS4->badges->pill->primary("This is a pill.");``      |
+| **Success**       | ``echo $BS4->badges->pill->success("This is a pill.");``      |
+| **Warning**       | ``echo $BS4->badges->pill->warning("This is a pill.");``      |
 
 #### Breadcrumb
 
@@ -48,5 +48,18 @@ echo $BS4->breadcrumb(array(
       "home"
 ));
 ```
-
 ![Output](https://cdn.discordapp.com/attachments/341914782053695490/483242142131814400/unknown.png)
+
+#### Buttons
+
+| Component         | usage                                                        |
+|:------------------|:-------------------------------------------------------------|
+| **Danger**        | ``echo $BS4->buttons->danger("click me", "btn_name");``      |
+| Dark              | ``echo $BS4->buttons->dark("click me", "btn_name");``        |
+| Info              | ``echo $BS4->buttons->info("click me", "btn_name");``        |
+| Light             | ``echo $BS4->buttons->light("click me", "btn_name");;``      |
+| primary           | ``echo $BS4->buttons->primary("click me", "btn_name");``     |
+| **Success**       | ``echo $BS4->buttons->success("click me", "btn_name");``     |
+| **Warning**       | ``echo $BS4->buttons->warning("click me", "btn_name");``     |
+
+![Output](https://cdn.discordapp.com/attachments/341914782053695490/483244162204827658/unknown.png)

@@ -4,6 +4,7 @@ $BS4 = new BS4();
 $BS4->alerts = new BS4_alerts();
 $BS4->badges = new BS4_badges();
 $BS4->badges->pill = new BS4_badges_pill();
+$BS4->buttons- = new BS4_buttons();
 
 class BS4
 {
@@ -17,6 +18,42 @@ class BS4
     }
 }
 
+class BS4_buttons
+{
+  function primary($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-primary">'.$content.'</button>';
+  }
+  function secondary($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-secondary">'.$content.'</button>';
+  }
+  function success($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-success">'.$content.'</button>';
+  }
+  function danger($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-danger">'.$content.'</button>';
+  }
+  function warning($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-danger">'.$content.'</button>';
+  }
+  function info($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-danger">'.$content.'</button>';
+  }
+  function light($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-danger">'.$content.'</button>';
+  }
+  function dark($content, $name)
+  {
+    return '<button type="button" name="'.$name.'" id="'.$name.'" class="btn btn-danger">'.$content.'</button>';
+  }
+
+}
 class BS4_alerts
 {
     public function primary($content)
