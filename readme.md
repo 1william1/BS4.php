@@ -71,7 +71,7 @@ echo $BS4->breadcrumb(array(
 echo $BS4->image->card->full(
 "Title",
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et",
-"https://privacy.com/assets/images/components/landing-feature-blocked-charges/spend-limit.png",
+"https://example.com/link/to/image.png",
 $BS4->link->button("Click me", "#home")
 );
 ```
