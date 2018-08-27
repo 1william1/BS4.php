@@ -1,6 +1,15 @@
 # Bootstrap4 PHP
 
 
+### Install
+
+```
+git clone https://github.com/1william1/BS4.php.git
+```
+```php
+include_once("BS4.php");
+```
+
 #### Alerts
 
 | Component         | usage                                                  |
