@@ -8,6 +8,7 @@ $BS4->buttons = new BS4_buttons();
 $BS4->image = new BS4_image();
 $BS4->image->card = new BS4_image_card();
 $BS4->link = new BS4_link();
+$BS4->cards = new BS4_cards();
 
 class BS4
 {
@@ -25,6 +26,26 @@ class BS4_image
 {
 }
 
+class BS4_cards
+{
+    public function body($content)
+    {
+        return '<div class="card"><div class="card-body">'.$content.'</div></div>';
+    }
+
+    public function footer($header, $title, $content)
+    {
+        return '<div class="card">
+  <div class="card-header">
+    '.$header.'
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">'.$title.'</h5>
+    <p class="card-text">'.$content.'</p>
+  </div>
+</div>';
+    }
+}
 class BS4_image_card
 {
     public function full($title, $content, $image, $button)

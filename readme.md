@@ -77,3 +77,16 @@ $BS4->link->button("Click me", "#home")
 ```
 
 ![Cards](https://cdn.discordapp.com/attachments/341914782053695490/483606138147962911/unknown.png)
+
+```php
+echo $BS4->cards->body("this is a body card");
+```
+
+![Cards](https://cdn.discordapp.com/attachments/341914782053695490/483607894126886942/unknown.png)
+
+
+```php
+echo $BS4->cards->footer("Header", "Card title", "card body so some random stuff.");
+```
+
+![Cards](https://cdn.discordapp.com/attachments/341914782053695490/483608910062944267/unknown.png)
