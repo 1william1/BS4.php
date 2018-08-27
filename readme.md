@@ -63,3 +63,17 @@ echo $BS4->breadcrumb(array(
 | **Warning**       | ``echo $BS4->buttons->warning("click me", "btn_name");``     |
 
 ![Output](https://cdn.discordapp.com/attachments/341914782053695490/483244162204827658/unknown.png)
+
+
+#### Cards
+
+```php
+echo $BS4->image->card->full(
+"Title",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et",
+"https://privacy.com/assets/images/components/landing-feature-blocked-charges/spend-limit.png",
+$BS4->link->button("Click me", "#home")
+);
+```
+
+![Cards](https://cdn.discordapp.com/attachments/341914782053695490/483606138147962911/unknown.png)
